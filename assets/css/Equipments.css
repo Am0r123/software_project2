@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Teko', sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.header {
+  
+    position: relative;
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('https://production-gvckb4eyhna3g6c7.a03.azurefd.net/v1/format-jpg-h-928-mode-crop-w-1920/kentico13corebase/media/lfmedia/lifefitnessimages/equipment/cardio/aspire%2520cardio/cardio-aspire-exercisers-1.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.5); /* Darkens the image */
+    z-index: 1; /* Places the overlay behind the text */
+}
+
+.header h1 {
+    position: relative; /* Position relative to ensure it's above the overlay */
+    z-index: 2; /* Places the header text above the overlay */
+    font-size: 150px;
+    color: #ffffff;
+}
+.header nav ul li{
+    font-size: 25px;
+    position: relative;
+    z-index: 2;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #ffffff;
+}
+
+h2 {
+    color: #ff0000;
+    border-bottom: 2px solid #ff0000;
+    padding-bottom: 10px;
+    margin: 25px;
+    font-size: 55px;
+}
+
+.equipment {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.item {
+    background-color: #333333;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: 30%;
+    transition: transform 0.2s;
+}
+
+.item:hover {
+    border: solid 1px #a3a0a0;
+    transform: scale(1.05);
+   
+}
+
+.item img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    margin: 0 auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+.close {
+    color: #ffffff;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}

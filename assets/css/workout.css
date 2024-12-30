@@ -1,0 +1,184 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+.backgroundimage{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:auto;
+    z-index:-10;
+}
+.container {
+    background-color: white;
+    margin: 100px auto;
+    padding: 20px 50px;
+    width: 450px;
+    height: 500px;
+    border-radius: 10px;
+    max-width: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+h2 {
+    color: #000;
+    text-align: center;
+}
+
+.form-group {
+    margin: 40px 0px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100px;
+    padding: 10px;
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.back {
+    position: absolute;
+    top: 470px;
+    background-color: #555;
+}
+
+button.next, button.submit {
+    position: absolute;
+    top: 470px;
+    right: 40px;
+}
+
+button + button {
+    margin-left: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+.step {
+    display: none;
+}
+
+.step.active {
+    display: block;
+}
+
+.progress-bar-container {
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.progress-bar {
+    height: 10px;
+    background-color: #ff0000;
+    width: 0%;
+}
+input[type="file"] {
+    display: none;
+}
+.custom-file-upload {
+    display: block;
+    padding: 40px;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    background-color: #f0f8ff;
+    color: #007bff;
+    cursor: pointer;
+    text-align: center;
+}
+.file-name {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+}
+h3{
+    margin-top: 30px;
+}
+.buttons,.buttons2{
+    background-color: #ff6666;
+    color: white;
+}
+.selected{
+    background-color: #ff0000;
+    color: white;
+}
+.text{
+    color:white;
+}
+.plans{
+    background-color: white;
+    margin: 100px auto;
+    padding: 20px 50px;
+    width: 450px;
+    height: 500px;
+    border-radius: 10px;
+    max-width: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+.timer{
+    position:absolute;
+    top:30px;
+    left:230px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.completed {
+    text-decoration: line-through;
+    color: green;
+}
+
+.completed:after {
+    content: ' ✔';
+    color: green;
+}
+#startWorkoutButton,.nextexecrsie{
+    position:absolute;
+    bottom:10px;
+    right:10px;
+}
+.nextexecrsie:disabled{
+    background-color:  rgb(255, 152, 152);
+}
+.error-message {
+    color: red;
+    font-size: 0.9em;
+    display: block;
+    margin-top: 5px;
+}
+.arrowbackk{
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+}

@@ -1,0 +1,81 @@
+body {
+    background-image: url('../img/gym-with-barbell-floor-sign-that-says-weight.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: center;
+    padding-top: 80px; 
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.8); 
+    padding: 15px 20px;
+    text-align: right;
+    width: 100%;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    z-index: 1000; 
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin-right: 20px; 
+    padding: 5px;
+    transition: color 0.3s ease; 
+}
+
+.navbar a:hover {
+    color: red; 
+}
+
+h1 {
+    color: red;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.square {
+    width: 80%; 
+    margin: 10px auto; 
+    padding: 20px;
+    background-color: rgba(50, 50, 50, 0.8); 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    display: flex; 
+    align-items: center; 
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+.square:hover {
+            transform: scale(1.05);
+        }
+
+
+.square img {
+    max-width: 30%; 
+    height: auto; 
+    margin-right: 20px; 
+}
+
+.text {
+    flex: 1; 
+}
+
+.text p {
+    margin: 10px 0; 
+    color: white; }

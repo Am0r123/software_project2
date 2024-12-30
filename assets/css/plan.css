@@ -1,0 +1,117 @@
+body {
+    background-image: url('../img/3d-gym-equipment2.jpg');
+    background-size: cover; 
+    background-position: center; 
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px; 
+}
+
+header {
+    background-color: rgba(51, 51, 51, 0.9);
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+h2{
+color: red;
+}
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 20px; 
+    transition: color 0.3s ease; 
+}
+
+.navbar a:hover {
+    color:red; 
+}
+
+
+h1 {
+    color: red;
+    margin: 100px 0 20px;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.card {
+    background-color: rgba(50, 50, 50, 0.8); 
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s, box-shadow 0.3s; 
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+}
+
+.card img {
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 10px;
+    margin-bottom: 15px; 
+}
+
+.text {
+    text-align: center; 
+}
+
+.text p {
+    margin: 10px 0; 
+}
+
+.btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color:black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color:red; 
+}
+
+
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar a {
+        margin: 10px 0; 
+    }
